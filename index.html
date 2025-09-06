@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MADHUMITHA J</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #6fb1fc, #4364f7, #2ec4b6);
+      color: #fff;
+      text-align: center;
+      padding: 3rem 1rem 5rem;
+      position: relative;
+    }
+    .profile-picture {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #fff;
+      margin-top: -80px;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.3rem;
+    }
+    h3 {
+      font-weight: 400;
+      color: #e2e8f0;
+    }
+
+    /* Tabs */
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: #ffffff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      padding: 0.5rem;
+    }
+    .tabs button {
+      padding: 0.7rem 1.4rem;
+      background: #edf2f7;
+      border: none;
+      border-radius: 25px;
+      margin: 0.4rem;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 500;
+      color: #333;
+      transition: all 0.3s ease;
+    }
+    .tabs button:hover,
+    .tabs button.active {
+      background: #2ec4b6;
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    /* Sections */
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      display: none;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.5s ease;
+    }
+    section.active {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h2 {
+      color: #2ec4b6;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+    }
+    ul li {
+      margin-bottom: 0.6rem;
+    }
+
+    /* Certificates */
+    .certificate-card {
+      display: inline-block;
+      text-align: center;
+      margin: 1rem;
+    }
+    .certificate-card img {
+      max-width: 220px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .certificate-card img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #2d3748;
+      color: white;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <img src="https://avatars.githubusercontent.com/u/230012167?s=400&u=f61f60f25b11381db153d74e5b30b388935753ef&v=4" 
+       alt="Profile Picture" class="profile-picture" id="profileImage">
+  <h1>MADHUMITHA J</h1>
+  <h3>BCA - A | S.I.V.E.T COLLEGE</h3>
+</header>
+
+<div class="tabs">
+  <button class="tab-btn active" data-tab="about">About</button>
+  <button class="tab-btn" data-tab="certificates">Certificates</button>
+  <button class="tab-btn" data-tab="education">Education</button>
+  <button class="tab-btn" data-tab="skills">Skills</button>
+  <button class="tab-btn" data-tab="contact">Contact</button>
+</div>
+
+<section id="about" class="active">
+  <h2>About Me</h2>
+  <p>I am an artist, a quick learner, and highly motivated. I possess strong problem-solving skills and believe in continuous learning. I am always eager to take on new challenges and collaborate with others to create meaningful work.</p>
+</section>
+
+<section id="education">
+  <h2>Qualification</h2>
+  <ul>
+    <li>Higher Secondary – Christ King Girls HR Sec School</li>
+    <li>High School – Christ King Girls HR Sec School</li>
+    <li>BCA - A | S.I.V.E.T College</li>
+  </ul>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>Internet and Java</li>
+    <li>C++ and Data Structures</li>
+    <li>Python</li>
+    <li>HTML, CSS, JavaScript</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:madhumithajbcaasivet@gmail.com">madhumithajbcaasivet@gmail.com</a></p>
+  <p>Phone: +91-9363295971</p>
+  <p>Location: Chennai, India</p>
+</section>
+
+<section id="certificates">
+  <h2>Certificates</h2>
+  <div class="certificate-card">
+    <a href="https://github.com/Madhu-2903/my-portfolio/blob/main/certificate_nm.jpeg">
+      <img src="https://github.com/Madhu-2903/my-portfolio/blob/main/certificate_nm.jpeg?raw=true" 
+           alt="Web Development Fundamentals">
+    </a>
+    <p>Web Development Fundamentals</p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 | Portfolio of MADHUMITHA J</p>
+</footer>
+
+<script>
+  const tabButtons = document.querySelectorAll('.tab-btn');
+  const tabSections = document.querySelectorAll('section');
+
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelector('.tab-btn.active').classList.remove('active');
+      btn.classList.add('active');
+      tabSections.forEach(section => section.classList.remove('active'));
+      document.getElementById(btn.getAttribute('data-tab')).classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>
