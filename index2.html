@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(135deg, #d9a7c7, #fffcdc); /* Unique gradient */
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #01e1ff, #0077b6);
+      color: #fff;
+      text-align: center;
+      padding: 3rem 1rem 5rem 1rem;
+      position: relative;
+    }
+
+    .header-content h1 {
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+    }
+
+    .header-content p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .profile-picture {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      position: absolute;
+      bottom: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 4px solid #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      background: #fff;
+    }
+
+    nav {
+      background-color: #222;
+      padding: 1rem 0;
+      text-align: center;
+      margin-top: 70px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #01e1ff;
+    }
+
+    .section-content {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      margin: 2rem auto;
+      border-radius: 25px;
+      width: 90%;
+      max-width: 900px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .section-content h2 {
+      color: #0077b6;
+      margin-bottom: 1rem;
+      text-align: center;
+      font-size: 2rem;
+      border-bottom: 2px solid #ddd;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .download-button {
+      background: linear-gradient(135deg, #0077b6, #00b4d8);
+      color: #fff;
+      padding: 0.7rem 1.5rem;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .download-button:hover {
+      background: linear-gradient(135deg, #00b4d8, #0077b6);
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+      background: #222;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>MADHUMITHA J</h1>
+      <p>Student | Aspiring Software Developer</p>
+      <img src="https://avatars.githubusercontent.com/u/230012167?s=400&u=f61f60f25b11381db153d74e5b30b388935753ef&v=4" alt="Your Profile Picture" class="profile-picture">
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <div class="section-content">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm Madhumitha, a passionate 2nd-year BCA student at S.I.V.E.T College, University of Madras.  
+        I aspire to become a software developer, driven by my passion for technology and innovation.  
+        I’m particularly interested in business and game development, and I actively attend workshops to grow my skills.  
+        My ultimate goal is to create immersive gaming experiences and innovative business strategies. 🚀
+      </p>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="section-content">
+      <h2>Education</h2>
+      <p>
+        <strong>10th:</strong> Christ King Girls Higher Secondary School — 65% <br><br>
+        <strong>12th:</strong> Christ King Girls Higher Secondary School — 70% <br><br>
+        <strong>BCA:</strong> S.I.V.E.T College, University of Madras (2023 - 2026)
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-content">
+      <h2>Skills</h2>
+      <h3>Programming Languages</h3>
+      <ul>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>C</li>
+        <li>Java</li>
+        <li>C++</li>
+        <li>JavaScript</li>
+      </ul>
+
+      <h3>Company Required Skills</h3>
+      <ul>
+        <li>Communication</li>
+        <li>Time Management</li>
+        <li>Team Coordination</li>
+        <li>Work Under Pressure</li>
+        <li>Active Listening</li>
+        <li>Creativity & Innovation</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-content">
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="#">Portfolio Website</a></li>
+        <li><a href="#">Personal Fitness Tracker</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="resume">
+    <div class="section-content" style="text-align:center;">
+      <h2>Resume</h2>
+      <a href="Resume.png" target="_blank" class="download-button">Download CV</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Madhumitha J | All rights reserved</p>
+  </footer>
+</body>
+</html>
+
